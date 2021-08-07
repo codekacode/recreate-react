@@ -1,5 +1,5 @@
 function render(element, container) {
-  container.innerHTML = element
+  container.innerHTML = element.render()
 }
 
 export { render }

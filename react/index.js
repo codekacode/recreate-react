@@ -1,5 +1,9 @@
-import { render } from './lib/react-dom.js'
+import { render } from './lib/react-dom.js';
+import User from './components/user.js';
 
 const container = document.querySelector('#root')
 
-render('',container )
+render(new User({
+  avatar: '',
+  nombre: ''
+}),container )
