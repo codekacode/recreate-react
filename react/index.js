@@ -4,6 +4,6 @@ import User from './components/user.js';
 const container = document.querySelector('#root')
 
 render(new User({
-  avatar: '',
-  nombre: ''
+  avatar: './images/ash.jpg',
+  nombre: 'Ash'
 }),container )

@@ -1,13 +1,16 @@
-import { Component } from '../lib/react.js'
+import { Component } from '../lib/react.js';
+
+
 
 class User extends Component {
   render(){
+    const {avatar, name} = this.props
     return `
       <div class="user">
         <div class="avatar">
-          <img src="./images/ash.jpg" alt="ash" />
+          <img src="${avatar}" alt="ash" />
         </div>
-        <h2>Ash</h2>
+        <h2>${name}</h2>
       </div>
     `
   }
